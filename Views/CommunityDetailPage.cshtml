@@ -1,0 +1,27 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.CommunityDetailPage>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<!-- Content Area Start -->
+<!-- Banner Start -->
+<section class="banner">
+  <img src="/images/community-banner.png" alt="banner" />
+  <div class="texts community-banner-texts">
+    @Html.GetBlockListHtml(Model.Stories)
+  </div>
+</section>
+<!-- Banner End -->
+<div class="content">
+  <a href="/">
+    <button class="go-back-button">
+      <img src="/images/arrow-back.png" alt="" />@Model.GoBackLink
+    </button>
+  </a>
+  <div class="community-text">
+    @Model.Content
+  </div>
+</div>
+<!-- Content Area End -->

@@ -1,0 +1,108 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels; 
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.HomePage>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels; 
+@{ 
+  Layout = "Master.cshtml";
+}
+
+  <!-- Banner Start -->
+  <section class="banner">
+    <img src="images/banner.png" alt="banner" />
+    <div class="texts">
+      <h2>@Model.Title</h2>
+      <p>@Model.Subheading</p>
+    </div>
+  </section>
+  <!-- Banner End -->
+  <!-- Stories Start -->
+  <section class="stories">
+    <h2>Community <span>Stories</span></h2>
+    <div class="stories-items">
+      <!-- Story Start -->
+      <div class="story">
+        <a>
+          <img src="images/stories/1.png" alt="1" srcset="" />
+          <div class="texts">
+            <p class="date">Jul 8</p>
+            <h2 class="title">BT Digital invests £30m in ET</h2>
+            <p class="excerpt">
+              BT Digital has announced a £30m strategic invest..
+            </p>
+          </div>
+        </a>
+      </div>
+      <!-- Story End -->
+      <!-- Story Start -->
+      <div class="story">
+        <a>
+          <img src="images/stories/2.png" alt="2" srcset="" />
+          <div class="texts">
+            <p class="date">Jul 5</p>
+            <h2 class="title">How to join Elastic Teams – the future of freelance tech talent</h2>
+            <p class="excerpt">
+              Remote working is just the beginning. The future...
+            </p>
+          </div>
+        </a>
+      </div>
+      <!-- Story End -->
+      <!-- Story Start -->
+      <div class="story">
+        <a>
+          <img src="images/stories/3.png" alt="3" srcset="" />
+          <div class="texts">
+            <p class="date">Jul 8</p>
+            <h2 class="title">Build Great Tech Teams</h2>
+            <p class="excerpt">
+              Recruiting and retaining talent while keeping the f..
+            </p>
+          </div>
+        </a>
+      </div>
+      <!-- Story End -->
+      <!-- Story Start -->
+      <div class="story">
+        <a>
+          <img src="images/stories/4.png" alt="4" srcset="" />
+          <div class="texts">
+            <p class="date">Jun 30</p>
+            <h2 class="title">Great Minds Don't Think Alike!</h2>
+            <p class="excerpt">
+              Distributed is a globally dispersed, remote-first co..
+            </p>
+          </div>
+        </a>
+      </div>
+      <!-- Story End -->
+      <!-- Story Start -->
+      <div class="story">
+        <a>
+          <img src="images/stories/5.png" alt="5" srcset="" />
+          <div class="texts">
+            <p class="date">Jul 8</p>
+            <h2 class="title">International Women’s Day</h2>
+            <p class="excerpt">
+              In a world where we see so much division, it's so im..
+            </p>
+          </div>
+        </a>
+      </div>
+      <!-- Story End -->
+      <!-- Story Start -->
+      <div class="story">
+        <a>
+          <img src="images/stories/6.png" alt="6" srcset="" />
+          <div class="texts">
+            <p class="date">May 15</p>
+            <h2 class="title">The state of remote work in the UK, Europe, and the USA</h2>
+            <p class="excerpt">
+              As companies increasingly realise what was perc..
+            </p>
+          </div>
+        </a>
+      </div>
+      <!-- Story End -->
+    </div>
+    <button id="load-more">SEE MORE STORIES</button>
+  </section>
+  <!-- Stories End -->

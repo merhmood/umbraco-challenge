@@ -1,0 +1,20 @@
+@inherits UmbracoViewPage<IFooterProperties>
+
+<footer>
+  <div class="content">
+    <div class="address">
+      <img src="@Model?.FooterLogo?.Url()" alt="footer logo" />
+      <p>
+        @Model.FooterAddress
+      </p>
+    </div>
+    <div class="copyright-and-socials">
+      <div>
+        <p>@Model.FooterCopyright</p>
+      </div>
+      <ul>
+        @Html.GetBlockListHtml(Model.FooterSocialIconsAndLinks)
+      </ul>
+    </div>
+  </div>
+</footer>
